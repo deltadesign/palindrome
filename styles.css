@@ -3,6 +3,17 @@
   padding: 0%;
   box-sizing: border-box;
 }
+
+.nav-head {
+  background: teal;
+  padding: 10px;
+}
+
+.container {
+  border: 2px solid teal;
+  border-radius: 0px 0px 15px 15px;
+}
+
 .btn {
   margin-bottom: 10px;
 }
