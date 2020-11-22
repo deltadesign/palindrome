@@ -5,8 +5,11 @@ form.addEventListener('submit', testPalindrome);
 input.addEventListener('click', resetForm);
 
 function testPalindrome(event){
-  const text = input.value.toLowerCase();
-  const textReverse = text.split('').reverse().join('');
+  const text = input.value.split(' ').join('').toLowerCase();
+  const textReverse = text.split(' ').reverse().join('');
+
+  console.log(text)
+  console.log(textReverse)
 
   if(text === ""){
     alert('Please add some text');
