@@ -9,24 +9,22 @@ function testPalindrome(event){
   const textReverse = text.split('').reverse().join('');
 
   if(text === ""){
-    alert('Please add some text')
+    alert('Please add some text');
     }else if(text === textReverse) {
-      result(true)
+      result(true);
     } else {
-     result(false)
+     result(false);
   }
-  
   event.preventDefault();
 }
 
 function result(outcome){
   
   if(outcome === true){
-    document.querySelector('.results').innerText ='That is a Palindrome!'
+    document.querySelector('.results').innerText ='That is a Palindrome!';
   } else {
-    document.querySelector('.results').innerText ='That is NOT a Palindrome!'
+    document.querySelector('.results').innerText ='That is NOT a Palindrome!';
   }
-
 }
 
 function resetForm(event){
